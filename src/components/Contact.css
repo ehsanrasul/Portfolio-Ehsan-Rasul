@@ -1,0 +1,50 @@
+.ContactContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.ContactContainer h1{
+
+    text-decoration: underline black;
+}
+
+
+.ContactContainer h1:hover{
+
+  opacity: 0.5;
+}
+
+.ContactContainer h3:hover{
+
+  opacity: 0.5;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    font-family: Arial;
+  }
+
+
+  .ContactContainer button{
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-top: 20px;
+    text-decoration: none;  
+  }
+
+  .ContactContainer  button:hover{
+    background: orange;
+  }

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Navbar ul{
+  list-style: none;
+  background: black;
+  padding: 0;
+  margin: 0;
+}
+
+.Navbar li{
+display: inline-block;
+}
+
+.Navbar a{
+text-decoration: none;
+color: white;
+width: 100px;
+display: block;
+padding: 25px 20px;
+font-size: 15px;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+}
+
+.Navbar a:hover{
+background: orange;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+  font-family: Arial;
+}
+
+.Footer{
+  display: block;
+  margin-top: auto;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  bottom: 0%;
+}
+
+.Footer a{
+text-decoration: none;
+display: inline-block;
+color: white;
+width: 100px;
+display: block;
+padding: 25px 20px;
+font-size: 15px;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+white-space: nowrap;
+margin-left: 38%;
+}
+
+
+

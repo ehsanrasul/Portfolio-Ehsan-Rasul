@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    font-family: Arial;
+  }
+
+ .MainContainer .AboutContainer p {
+
+    font-size: 20px;
+    font-weight:bold;
+    text-indent: 1cm;
+    margin-right: 50px;
+    text-align: justify;
+
+  }
+
+
+  .TechContainer a:hover{
+    opacity: 0.5;
+  }
+
+ #Desc{
+    text-decoration: underline black;
+    margin-right: 50%;
+ }
+
+
+ .AboutContainer h1:hover{
+    opacity: 0.5;
+ }
+
+  .AboutContainer p:hover{
+    opacity: 0.5;
+  }
+
+
+  .AboutContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 500px;
+  }
+
+
+  .MainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px
+}
+
+.TechStackContainer{
+
+margin-top: 10%;
+
+}
+
+.TechDescription{
+margin-top: 4%;
+font-size: 20px;
+font-family:  Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+margin-left: 40px;
+}
+
+
+.TechDescription p:hover{
+    opacity: 0.5;
+}
+
+
+.TechContainer {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr 0fr;
+    grid-gap: 25px;
+    margin-left: 150px;
+    margin-top: 5%;
+}
