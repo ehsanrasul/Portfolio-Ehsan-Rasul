@@ -1,29 +1,32 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
-    branches:
-      - main
+      branches:
+            - main
 
 env:
-  CI: false
+    CI: false
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      
+      - name: Configure Node
+        uses: actions/setup-node@v3
 
-      - name: Build
-        run: |
-          # Build your website here
-          # For example, if using Jekyll:
-          jekyll build
-          
+
+      - name: Install
+        run:  |
+          npm i
+          npm run build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: ehsanrasul/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
+          folder: build
+          branch: gh-pages
