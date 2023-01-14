@@ -6,7 +6,7 @@ on:
             - main
 
 env:
-    process.env.CI : false
+    CI: false
 
 jobs:
   build-and-deploy:
